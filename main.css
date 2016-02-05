@@ -1,0 +1,166 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 7em;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+p {
+  font-size: 1.5em;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+img.align-center {
+  display:block;
+  margin: 0px auto;
+}
+
+img.medium {
+  width: 200px;
+  height: 200px;
+}
+
+form {
+  border: 8px dashed #00FFFF;
+  padding: 20px;
+}
+
+input[type="text"], textarea {
+
+  background-color : #00FF00; 
+
+}
+
+.pinkButton {
+  -moz-box-shadow:inset 0px 1px 0px 0px #fbafe3;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #fbafe3;
+  box-shadow:inset 0px 1px 0px 0px #fbafe3;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff5bb0), color-stop(1, #ef027d));
+  background:-moz-linear-gradient(top, #ff5bb0 5%, #ef027d 100%);
+  background:-webkit-linear-gradient(top, #ff5bb0 5%, #ef027d 100%);
+  background:-o-linear-gradient(top, #ff5bb0 5%, #ef027d 100%);
+  background:-ms-linear-gradient(top, #ff5bb0 5%, #ef027d 100%);
+  background:linear-gradient(to bottom, #ff5bb0 5%, #ef027d 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bb0', endColorstr='#ef027d',GradientType=0);
+  background-color:#ff5bb0;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #ee1eb5;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #c70067;
+}
+.pinkButton:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ef027d), color-stop(1, #ff5bb0));
+  background:-moz-linear-gradient(top, #ef027d 5%, #ff5bb0 100%);
+  background:-webkit-linear-gradient(top, #ef027d 5%, #ff5bb0 100%);
+  background:-o-linear-gradient(top, #ef027d 5%, #ff5bb0 100%);
+  background:-ms-linear-gradient(top, #ef027d 5%, #ff5bb0 100%);
+  background:linear-gradient(to bottom, #ef027d 5%, #ff5bb0 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ef027d', endColorstr='#ff5bb0',GradientType=0);
+  background-color:#ef027d;
+}
+.pinkButton:active {
+  position:relative;
+  top:1px;
+}
+
+.purpleButton {
+  -moz-box-shadow:inset 0px 1px 0px 0px #e184f3;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #e184f3;
+  box-shadow:inset 0px 1px 0px 0px #e184f3;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c123de), color-stop(1, #a20dbd));
+  background:-moz-linear-gradient(top, #c123de 5%, #a20dbd 100%);
+  background:-webkit-linear-gradient(top, #c123de 5%, #a20dbd 100%);
+  background:-o-linear-gradient(top, #c123de 5%, #a20dbd 100%);
+  background:-ms-linear-gradient(top, #c123de 5%, #a20dbd 100%);
+  background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c123de', endColorstr='#a20dbd',GradientType=0);
+  background-color:#c123de;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #a511c0;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #9b14b3;
+}
+.purpleButton:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #a20dbd), color-stop(1, #c123de));
+  background:-moz-linear-gradient(top, #a20dbd 5%, #c123de 100%);
+  background:-webkit-linear-gradient(top, #a20dbd 5%, #c123de 100%);
+  background:-o-linear-gradient(top, #a20dbd 5%, #c123de 100%);
+  background:-ms-linear-gradient(top, #a20dbd 5%, #c123de 100%);
+  background:linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a20dbd', endColorstr='#c123de',GradientType=0);
+  background-color:#a20dbd;
+}
+.purpleButton:active {
+  position:relative;
+  top:1px;
+}
+
+
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
