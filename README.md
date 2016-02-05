@@ -1,2 +1,3 @@
 # GuessingGame
-Guessing Game Website Files
+
+This is the repository for Fullstack's "Guessing Game" project.
