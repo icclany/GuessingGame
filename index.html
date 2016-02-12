@@ -1,22 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang                 ="en">
+
 <head>
-  	<meta charset="utf-8">
-  	<title>Guessing Game</title>
-  	<link rel="stylesheet" href="assets/stylesheets/main.css">
+  	<meta charset          ="utf-8">
+  	<title>Iris's Guessing Game</title>
+    <link href             ='https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Coming+Soon' rel='stylesheet' type='text/css'>
+  	<link rel              ="stylesheet" href="assets/stylesheets/main.css">
+    <script src            ="jquery-1.12.0.min.js"></script>
+    <script src            ="guessingGame.js"></script>
  </head>
  
- <body>
-  <h1>Guess the Number!</h1>
-  <form>
-  <p><img src="images/smile.png" alt="smiley" class="align-center medium"/>
-  <img src="images/rainbow.gif" alt="rainbow" class="align-center"/> </p>
-  	<p> Guess the number I'm thinking of before these colors blind you. 
-  	</p>
-  	<input type = "text" name= "userguess" placeholder= "Guess here"/>
-  	<a href="#" class="pinkButton">Submit your guess</a>
-  	<a href="#" class="purpleButton">Start Over :(</a> <a href="#" class="purpleButton">Hint please!</a>
-  </form>
+<body>
+<!-- Top Half of Page holds animations for winning/losing -->
+ <div id                   = "topHalf">
+  <!-- Hidden confetti -->
+  <p><img src              ="images/confetti.gif" id="confetti" class="align-center"/></p>
+  <!-- Hidden fire -->
+  <p><img src              ="images/fire.gif" id="fire" class="align-center"/></p>
+
+  <h1>Guess a number between 1 and 100!</h1>
+  
+<!-- TALLY BOX to keep track of guesses-->
+   <blockquote>Your guesses:</blockquote>
+
+<!-- Smiley face-->
+  <p><img src              ="images/smile.png" id="smileyface" alt="smiley" class="align-center medium"/></p>
+
+<!-- Hidden sad face -->
+  <p><img src              ="images/sadface.png" id="sadface" alt="sad" class="align-center medium"/></p>
+
+</div>
+<!----------------------------------------------------------->
+
+<!-- Second half of page is for user interaction -->
+<div id                    ="messageArea"> 
+  	<h2> You have <span id = "tally"> 10</span> tries to guess the number I'm thinking of.
+  	</h2>
+
+    <p id                  = "messageBox"> Good luck! </p>
+
+      <input type          = "text" id= "userGuess" placeholder= "Guess here"/>
+    	<a href              ="#" class="pinkButton">Submit your guess</a>
+
+  	<a href                ="#" class="purpleButton" id="hintButton">Hint please!</a>
+
+    <a href                ="#" class="purpleButton" id="restart">Start Over</a> 
+</div> <!-- USER INTERACTION-->
+
 </body>
 
 </html>
